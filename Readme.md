@@ -52,7 +52,7 @@ This is ***your*** job. It's up to the module creator to prove that their work i
 	0       | Program does not compile/run. Build Errors // Required naming conventions not met |
 	0       | No Submission |
 
-- 30pts: Code meets industry standards
+- 3pts: Code meets industry standards
 	- These points are only awardable if you score at minimum a 5/7 on above criteria
 
 	Points  | Reasoning | 

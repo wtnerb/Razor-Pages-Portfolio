@@ -3,8 +3,10 @@
 Total Points Possible: 50pts. 
 
 ## Overview
-You will be creating personal portfolio to display a repository of your work that you have created while here
-at Code Fellows, or external projects you are proud of. 
+Think up an application that could embody the Create, Read, Update, and Delete commands.
+This can be anything that you wish. If you are having a hard time thinking up a topic, create one of the following:
+1. a remake of the Student Enrollment lab
+2. A Portfolio
 
 This is a multi-day assignmnet:
 
@@ -13,44 +15,26 @@ This is a multi-day assignmnet:
 Create a Razor Page Web App, You may use the "Web Application" template found in a new Visual studio web application. 
 
 Scaffold out the beginning features of the site by doing the following:
-1. Delete/remove the precreated Index, About, and Contact .cshtml files
+1. Delete/remove the pre-created Index, About, and Contact .cshtml files
 1. Create your own `Index.cshtml` view page. This should ***not*** be a razor page with a code behind. 
 	1. Don't forget about the `@page` directive at the top
-1. Make your home page have 3 different links on it. Your Github Repo, A portfolio Page, LinkedIn account
-1. Add a models folder and create an interface named `IPortfolioService`. Add the CRUD operation requirements to this interface that will 
-be required for you to "manage" your portfolio. 
-1. Create a new class in your models called `PortfolioService` that implements the above interface. 
+1. Add a models folder and create an interface service that will require what connections need to be made to the DB. (i.e. in class, we had an `IRestaurantService`)
+	- Add the CRUD operation requirements to this interface that will 
+1. Create a new class in your models that implements the above interface. (i.e. class example was `RestaurantService`)
 	- Make this service implement and execute the operations with your registered database. 
 1. Register your service with D.I. in your startup class. 
 
 
 ### Part 2 Milestones
-- Create a Project landing page (Just a regular .cshtml page, ***not*** a razor page). This will display, at minimum, the following information:
-	1. A description of your project you are displaying
-		1. Name of the Project
-		1. Language used (C#, JS, Python, C++, Java, etc...)
-		1. What does the project do?
-		1. Technologies used (Frameworks, 3rd party additons, etc...)
-	2. An image/icon that represents your project (the next milestone prompts you to do an image upload feature)
-	3. Link to your project
-- Seed your database with default projects. 
-- Create an Admin page (no need to lock it down yet...) as a razor page (with a cshtml, and .cshtml.cs file)
-	- Implement the Create, Read, update, and Delete functionality onto the indvidual projects
-	- Have `OnGet()`, `OnPost` and `OnPostDelete` at minimum defined in your code behind.
-	- Make sure that you are targeting each portfolio by the their Id's
+- Seed your database with default data. 
+- Create a Razor Page with a code behind that will implement the CRUD operations. 
 
 ### Part 3 Milestones
-- Incorporate an image uploading feature into your site, and make the image save to 
-an `images` folder in your `wwwroot`.  
-- Add Identity to your application. Create a hidden login page that can be accessed by an admin. (you dont need to create a registration process.)
-	- No need to seed your username/password into the application. Maybe add a username/password into user secrets?
-	- Be sure to share in your comments of your Canvas assignment what the username/password is so that we can test it!
-- Lock your admin page to only be accessed by logged in users. 
-
-### Part 4 Milestones
 - Using SCSS, add a front end to your applicaiton using the SCSS technique. 
 - Deploy to Azure
 - Create your readme
+	- Tell me what your site does (what is the subject)
+	- What are the CRUD operations doing, and where are they being implemented?
 
 ***Unit tests are not required for this application***
 
@@ -72,7 +56,7 @@ This is ***your*** job. It's up to the module creator to prove that their work i
 - [Reference](https://github.com/noffle/art-of-readme)
 
 ## Rubric
-- 35pts: Program meets all requirements described in Lab directions
+- 21pts: Program meets all requirements described in Lab directions
 
 	Points  | Reasoning | 
 	 ------------ | :-----------: | 
@@ -84,7 +68,7 @@ This is ***your*** job. It's up to the module creator to prove that their work i
 	0       | Program does not compile/run. Build Errors // Required naming conventions not met |
 	0       | No Submission |
 
-- 15pts: Code meets industry standards
+- 9pts: Code meets industry standards
 	- These points are only awardable if you score at minimum a 5/7 on above criteria
 
 	Points  | Reasoning | 

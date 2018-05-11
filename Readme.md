@@ -1,4 +1,4 @@
-# Razor Page Portfolio Project
+# Razor Page Project
 
 Total Points Possible: 50pts. 
 

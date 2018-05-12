@@ -1,6 +1,6 @@
 # Razor Page Project
 
-Total Points Possible: 50pts. 
+Total Points Possible: 30pts. 
 
 ## Overview
 Think up an application that could embody the Create, Read, Update, and Delete commands.

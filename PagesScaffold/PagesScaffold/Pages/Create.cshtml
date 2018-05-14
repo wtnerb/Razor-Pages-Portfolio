@@ -1,0 +1,25 @@
+﻿@page
+@model PagesScaffold.Pages.CreateModel
+
+<h2>Create</h2>
+
+<h4>Question</h4>
+<hr />
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Question.Text"></label>
+        <input asp-for="Question.Text" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Question.AnswersCSV"></label>
+        <input asp-for="Question.AnswersCSV" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Question.CorrectAnswer"></label>
+        <input asp-for="Question.CorrectAnswer"/>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Create" />
+    </div>
+</form>

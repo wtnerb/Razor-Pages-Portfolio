@@ -1,0 +1,22 @@
+﻿@page
+@model PagesScaffold.Pages.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>@Model.Question.Text</h4>
+    <ul>
+        @foreach(string ans in Model.Question.Answers)
+        {
+            <li>@ans</li>
+        }
+    </ul>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Question.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

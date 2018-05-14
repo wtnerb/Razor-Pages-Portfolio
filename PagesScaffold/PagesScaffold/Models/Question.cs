@@ -9,7 +9,7 @@ namespace PagesScaffold.Models
     {
         public int Id { get; set; }
         public string Text { get; set; }
-        public string[] Answers { get; set; }
+        public string AnswersCSV { get; set; }
         public string CorrectAnswer { get; set; }
         //TODO uncomment and add features
         //public bool Calulate { get; set; }
